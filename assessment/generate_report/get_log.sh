@@ -1,1 +1,0 @@
-psql "postgres://stqa:stqa@localhost:5433/stqa_logging" --csv -c 'SELECT * FROM request_logs;' > activity.csv

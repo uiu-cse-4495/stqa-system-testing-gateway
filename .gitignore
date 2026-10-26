@@ -2,9 +2,9 @@ deployments/docker-compose.yml
 send_keys/.env
 send_keys/credentials.csv
 send_keys/send_log.csv
-generate_report/activity.csv
-db_queries/**/*.csv
+assessment/generate_report/activity.csv
+assessment/db_queries/**/*.csv
 backends/
-check_reports/course_files
-check_reports/venv/
-check_reports/requests.csv
+assessment/check_reports/course_files
+assessment/check_reports/venv/
+assessment/check_reports/requests.csv
