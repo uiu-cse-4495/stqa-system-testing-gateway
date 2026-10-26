@@ -335,9 +335,9 @@ def review_team(df, team_id, rows_idx, path, args):
 # -------------------------------------------------------------------- main
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--dir", type=Path, default=BASE / "assessments_updated")
-    ap.add_argument("--sta", type=Path, default=BASE / "STA.csv")
-    ap.add_argument("--sub", type=Path, default=BASE / "submissions2",
+    ap.add_argument("--dir", type=Path, default=BASE / "assessments")
+    ap.add_argument("--sta", type=Path, default=BASE / "SystemTestingMarks.csv")
+    ap.add_argument("--sub", type=Path, default=BASE / "submissions",
                     help="folder with the students' own submissions (report.md per team)")
     ap.add_argument("--no-sub", action="store_true", help="do not show the submitted report first")
     ap.add_argument("--team", help="only this team number, e.g. 31")
