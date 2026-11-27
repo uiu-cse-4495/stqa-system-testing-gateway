@@ -8,3 +8,4 @@ backends/
 assessment/check_reports/course_files
 assessment/check_reports/venv/
 assessment/check_reports/requests.csv
+gateway/semester-data/**

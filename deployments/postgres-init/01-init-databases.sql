@@ -1,10 +1,10 @@
 -- Runs once when the postgres container's data directory is first
 -- initialized (docker-entrypoint-initdb.d convention). Creates the
--- permanent control/logging databases plus a demo template database for
--- the example-buggy-api backend (spec sections 12, 14, 15).
+-- permanent control/logging databases plus backend template databases.
 CREATE DATABASE stqa_control;
 CREATE DATABASE stqa_logging;
 CREATE DATABASE stqa_template_demo;
+CREATE DATABASE stqa_template_wallet_lite;
 
 -- Read-only role for the separate assessment tooling (../assessment).
 -- It can only SELECT from the logging database; it has no access to the
